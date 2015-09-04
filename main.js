@@ -91,8 +91,6 @@ var userOne = function() {
         var diagTwo = [board[0][2], board[1][1], board[2][0]];
         if (rowOne.toString() === 'X,X,X') {
             gameOver = true;
-        } else if (rowOne.toString() === 'X,X,X') {
-            gameOver = true;
         } else if (rowTwo.toString() === 'X,X,X') {
             gameOver = true;
         } else if (rowThree.toString() === 'X,X,X') {
@@ -101,13 +99,15 @@ var userOne = function() {
             gameOver = true;
         } else if (colTwo.toString() === 'X,X,X') {
             gameOver = true;
+        } else if (colThree.toString() === 'X,X,X') {
+            gameOver = true;
         } else if (diagOne.toString() === 'X,X,X') {
             gameOver = true;
         } else if (diagTwo.toString() === 'X,X,X') {
             gameOver = true;
         };
 		userTwo();
-
+};
 
         console.log('Lets play Tic Tac Toe!');
         console.log('You\'re player one, what\'s your name?');
@@ -116,4 +116,3 @@ var userOne = function() {
         player2 = prompt();
         gameBoard();
         userOne();
-
